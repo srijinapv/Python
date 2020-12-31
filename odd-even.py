@@ -1,5 +1,3 @@
-#!/Users/srijina/opt/miniconda3/bin/python
-
 def main(starting_number,ending_number):
 	odd_numbers = []
 	for value in range(starting_number, ending_number+1):
