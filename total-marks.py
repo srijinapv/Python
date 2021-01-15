@@ -18,7 +18,7 @@ class TotalMarks(Theory,Practical):
         return total
 
     def percentage(self):
-        percentage = (( self.t1marks + self.t2marks + self.p1marks + self.p2marks )* 100 ) /400
+        percentage = (obj.total() * 100 ) /400
         return percentage
 if __name__ == '__main__':
     t1marks = int(input("Theory mark1:"))
