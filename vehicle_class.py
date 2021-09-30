@@ -1,4 +1,4 @@
-class vehicle:
+class Vehicle:
     def __init__(self, brand, model, ftype):
         self.brand = brand
         self.model = model
@@ -18,8 +18,8 @@ class vehicle:
 
 
 #constructing object
-object1_vehicle = vehicle('Hyundai', 'i20', 'Petrol')
-object2_vehicle = vehicle('Ford','Endavour', 'Deisel')
+object1_vehicle = Vehicle('Hyundai', 'i20', 'Petrol')
+object2_vehicle = Vehicle('Ford','Endavour', 'Deisel')
 
 #Accessing attribute values
 print(object1_vehicle.brand)
@@ -29,7 +29,7 @@ print(object1_vehicle.ftype)
 #calling method
 print(object1_vehicle.fuel_level_vehicle())
 print(object1_vehicle.fuel_price())
-object2_vehicle.fuel_level = 10
+object2_vehicle.fuel_level = 14
 
 print(object2_vehicle.fuel_level_vehicle())
 print(object2_vehicle.fuel_price())
