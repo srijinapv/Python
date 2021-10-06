@@ -26,7 +26,7 @@ print(out)
 # list out keys and values separately
 key_list = list(out.keys())
 val_list = list(out.values())
-# print key with val 100
+# print key with value index 1
 position = val_list.index(1)
 print(key_list[position])
 
