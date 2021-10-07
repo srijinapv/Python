@@ -1,5 +1,4 @@
-#Condition 1 :A string to be valid if all characters of the string appear the same number of times.
-#Condition 2 :It is also valid if one can remove just  character at  index in the string, and the remaining characters will occur the same number of times.
+#Condition  :A string to be valid if all characters of the string appear the same number of times.
 
 import math
 import os
@@ -27,7 +26,26 @@ print(out)
 key_list = list(out.keys())
 val_list = list(out.values())
 # print key with value index 1
-position = val_list.index(1)
-print(key_list[position])
+#position = val_list.index(1)
+#print(val_list[position])
+
+if len(s) %2 == 0 :
+    for i in range(1,len(s)+1):
+        if val_list[i] == 2:
+            i = i + 1
+        elif val_list[i] == 1:
+            i=i+1
+        else:
+            print("not valid")
+    print("valid")
+
+else:
+    for i in range(1,len(s)+1):
+        if val_list[i] == 1 :
+            i = i + 1
+        else:
+            print("not valid")
+print("valid")
+
 
 
